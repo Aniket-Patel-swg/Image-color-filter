@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color filter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div>
+        <div class="Canvas-division">
+            <div id="Canvas">
+            <h1 class="glow">VARIOUS FILTER FOR IMAGE</h1>
+            <div>
+            <canvas id="can1">
+            </canvas>
+            <canvas id="can2">
+            </canvas>  
+            </div> 
+        </div>    
+    <div id="file-el">
+        <p>
+         <h2> LOAD IMAGE :-</h2>
+          <input type="file" multiple="false"
+           accept="image/*" id="input1" 
+         class="button-81" onchange="upload()">
+        </p>
+    </div> 
+        </div>    
+    <div id="Filters">
+        <p>
+         <h2> CHOOSE FILTER :-</h2>
+        </p>
+          <input type="button" value="GREYSCALE" 
+           class="button-33" onclick="doGrayscale()" >
+        <input type="button" value="RED"
+            class="button-33" onclick="doRed()">
+        <input type="button" value="GREEN"
+            class="button-33"   onclick="doGreen()">
+         <input type="button" value="BLUE"
+          class="button-33" onclick="doBlue()">
+        <p>
+        <p>
+          <input type="button" value="YELLOW"
+         class="button-33" onclick="doYellow()">
+          <input type="button" value="ORANGE"
+           class="button-33" onclick="doOrange()">
+          <input type="button" value="INDIGO"
+           class="button-33" onclick="doIndigo()">
+          <input type="button" value="VIOLET"
+           class="button-33" onclick="doViolet()">
+         </p>
+        <p>
+         <input type="button" value="WINDOW"
+         class="button-29" onclick="makeWindow()">
+          
+         <input type="button" value="RAINBOW"
+         class="button-29" onclick="makeRainbow()">
+          
+         <input type="button" value="BLUR"
+         class="button-29" onclick="makeBlur()">
+          
+          </p>
+    </div>     
+    <div id="clear">
+        <p>
+          <h2>CLEAR :-</h2>
+          <input type="button" value="CLEAR FILTER" class="button-81" onclick="clearFilter()">
+          <input type="button" value="CLEAR IMAGE'S" class="button-81" onclick="clearImage()">
+         
+        </p>  
+        <h1 class="glow">THANK YOU FOR GIVING TIME!</h1>
+        </div>
+    <Script src="index.js"></Script>
+</body>
+</html>
